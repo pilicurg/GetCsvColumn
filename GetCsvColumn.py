@@ -38,13 +38,6 @@ class CsvFile(object):
             raise Exception('Empty header list!')
 
     def _reformat_rule_dict(self, rule_dict):
-        """
-        input: {'SFN': '~[3, 4]', 'CONVERT': <type 'int'>, 'CELL_ID': [1, 4], 'USER_ID': 79}
-        output:
-        [{'CELL_ID': '1', 'USER_ID': '79'}, {'CELL_ID': '4', 'USER_ID': '79'}],
-        [{'SFN': '3'}, {'SFN': '4'}],
-        {'CONVERT': <type 'int'>},
-        """
         convertType = rule_dict.pop('CONVERT', None)
 
         seqmatch = re.compile(r'^(\[|\().*(\]|\))$')
@@ -66,8 +59,6 @@ class CsvFile(object):
                 else:
                     excludedict[key] = [value]
 
-        # includedict = {'userId': [79], 'cellId': [3, 4]}
-        # excludedict = {'sfn': [3, 1]}
         includelist = tuple([{key: str(v)} for key, value in includedict.iteritems() for v in value])
         excludelist = tuple([{key: str(v)} for key, value in excludedict.iteritems() for v in value])
 
