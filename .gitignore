@@ -41,3 +41,10 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+
+# Directories created by Pycharm
+.idea
+
+# compiled python
+*.pyc

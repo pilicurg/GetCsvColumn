@@ -1,0 +1,3 @@
+A python library for extracting column(s) from a csv file by header name. Filters can also be applied like you do in Microsoft Excel. More than one column can be obtained at one time for unpacking.
+
+For more detail, read and run the demo.py.
