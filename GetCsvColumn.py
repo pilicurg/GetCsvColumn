@@ -1,4 +1,4 @@
-__author__ = 'Lyu Feng'
+__author__ = 'www.lfhacks.com'
 
 EXCLUDE_SIGN = '~'
 EXCLUDE = lambda x: EXCLUDE_SIGN + str(x)
