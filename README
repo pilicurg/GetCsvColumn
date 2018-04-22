@@ -2,4 +2,6 @@ A python library for extracting column(s) from a csv file by header name. Filter
 
 There must be a header row in the csv file, however the first row will always be taken as the header row.
 
-For more detail, read and run the demo.py.
+Usage: read and run the demo.py .
+
+For more detail, please refer to the [original page]:(http://www.lfhacks.com/tech/python-read-specific-column-csv)
