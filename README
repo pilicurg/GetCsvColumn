@@ -4,4 +4,4 @@ There must be a header row in the csv file, however the first row will always be
 
 Usage: read and run the demo.py .
 
-For more detail, please refer to the http://www.lfhacks.com/tech/python-read-specific-column-csv
+For more detail, please refer to http://www.lfhacks.com/tech/python-read-specific-column-csv
